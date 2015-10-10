@@ -1,0 +1,42 @@
+/* TEAM
+-------------------------------------------------*/
+.team {
+    @extend %clearfix;
+    @extend %space;
+    overflow: hidden;
+    color: $white;
+    background: lighten($colorPrimary, 2%);
+    h2, h4 {
+        color: $white;
+    }
+    h4 {
+        padding: 10px 0 0;
+        margin: 0;
+    }
+    .expandable-box {
+        border-right: solid 1px lighten($colorPrimary, 5%);
+    }
+
+    .expandable-box-top {
+        padding: $space;
+        background: $colorPrimary;
+    }
+
+    .expandable-box-bottom {
+        a, span {
+            width: 50%;
+            &:first-child {
+                background: darken($colorPrimary, 2%);
+            }
+            &:last-child {
+                background: lighten($colorPrimary, 4%);
+            }
+        }
+        .icon {
+            font-size: 1.5rem;
+        }
+    }
+    .owl-carousel .owl-wrapper-outer {
+        overflow: visible;
+    }
+}

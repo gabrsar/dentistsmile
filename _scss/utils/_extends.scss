@@ -1,0 +1,58 @@
+/* PLACEHOLDERS
+-------------------------------------------------*/
+
+/* Clearfix
+-------------------------------*/
+%clearfix {
+    &:after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+}
+
+/* Form fields
+-------------------------------*/
+%form-fields {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    border: solid 2px $colorBorder;
+    border-radius: 0;
+    box-shadow: none;
+    &:focus {
+        outline: 0;
+        border-color: $colorPrimary;
+        transition: all 0.3s ease;
+        box-shadow: none;
+    }
+}
+
+/* Space
+-------------------------------*/
+%space {
+    padding: $space*3 0;
+}
+
+/* Lists
+-------------------------------*/
+%no-bullet {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Alignment
+-------------------------------*/
+%align-left {
+    text-align: left;
+}
+
+%align-right {
+    text-align: right;
+}
+
+%align-center {
+    text-align: center;
+}
+

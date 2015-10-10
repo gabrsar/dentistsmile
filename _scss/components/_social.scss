@@ -1,0 +1,15 @@
+/* SOCIAL
+-------------------------------------------------*/
+.social {
+    @extend %no-bullet;
+    margin: $space 0 10px;
+    li {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 1.25rem;
+        line-height: 1;
+    }
+    a {
+        color: $white;
+    }
+}

@@ -1,0 +1,21 @@
+/* ICON STYLE
+-------------------------------------------------*/
+.icon-box {
+    width: 100%;
+    padding: $space;
+    margin-bottom: $space;
+    background: $white;
+    text-align: center;
+}
+
+.boxed-icon {
+    width: 2.3rem;
+    height: 2.3rem;
+    padding: 5px 0;
+    border: solid 2px $colorPrimary;
+    text-align: center;
+    .icon {
+        color: $colorPrimary;
+        font-size: 1.5rem;
+    }
+}

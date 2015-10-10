@@ -1,0 +1,95 @@
+/* GONFIG
+-------------------------------------------------*/
+
+/* Fonts
+-------------------------------*/
+
+/* Font family */
+$fontFamilyPrimary: 'Open Sans', sans-serif;
+$fontFamilySecondary: 'Nunito', sans-serif;
+
+/* Font weight */
+$fontWeightRegular: 400;
+$fontWeightSemi: 600;
+$fontWeightBold: 700;
+
+/* Colors
+-------------------------------*/
+
+/* Descriptive colors */
+$white: #fff;
+$black: #000;
+$grey: #333;
+$greyLight: #555;
+$gallery: #eee;
+$alto: #ddd;
+$mercury: #e9e9e9;
+$alabaster: #f7f7f7;
+$pelorous: #3dadb2;
+
+/* Color usage */
+$colorPrimary: $pelorous;
+$colorHeading: $grey;
+$colorBase: $greyLight;
+$colorBg: $alabaster;
+$colorBorder: $alto;
+
+/* Spacing
+-------------------------------*/
+$space: 20px;
+$spaceDouble: 40px;
+
+/* Breakpoints
+-------------------------------*/
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+$bpoints: (
+    'xsmall' : ( max-width: $screen-xs ),
+    'lsmall' : ( min-width: $screen-xs ),
+    'small'  : ( min-width:  $screen-sm ),
+    'medium' : ( min-width:  $screen-md ),
+    'large'  : ( min-width: $screen-lg )
+);
+
+/* BOOTSTRAP OVERRIDE
+-------------------------------------------------*/
+
+/* Global
+-------------------------------*/
+$body-bg: $white;
+
+/* Navbar
+-------------------------------*/
+// Basics of a navbar
+$navbar-height: 70px;
+$navbar-margin-bottom: 0;
+$navbar-border-radius: none;
+$navbar-padding-horizontal: 0;
+
+$navbar-default-color: $white;
+$navbar-default-bg: $white;
+$navbar-default-border: none;
+
+// Navbar collapse
+$grid-float-breakpoint: $screen-md;
+
+/* Buttons
+-------------------------------*/
+$btn-default-color: $white;
+$btn-default-bg: $colorPrimary;
+$btn-default-border: $colorPrimary;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base: 0;
+$btn-border-radius-large: 0;
+$btn-border-radius-small: 0;
+
+/* Tooltip
+-------------------------------*/
+$tooltip-max-width: 260px;
+$tooltip-color: #fff;
+$tooltip-bg: darken($colorPrimary, 2%);
+

@@ -1,0 +1,20 @@
+/* GALLERY
+-------------------------------------------------*/
+.gallery {
+    @extend %clearfix;
+    @extend %space;
+}
+
+.gallery-item {
+    position: relative;
+    float: left;
+    @include breakpoint(lsmall) {
+        width: 50%;
+    }
+    @include breakpoint(small) {
+        width: 25%;
+    }
+    .icon {
+        font-size: 2rem;
+    }
+}

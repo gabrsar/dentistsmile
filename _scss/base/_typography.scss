@@ -1,0 +1,70 @@
+/* TYPOGRAPHY
+-------------------------------------------------*/
+
+/* Headings & Paragraphs
+-------------------------------*/
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    color: $colorHeading;
+    font-family: $fontFamilySecondary;
+}
+
+h1, .h1 {
+    font-size: 2rem;
+}
+
+h2, .h2 {
+    font-size: 1.875rem;
+}
+
+h3, .h3 {
+    font-size: 1.5rem;
+}
+
+h4, .h4 {
+    font-size: 1.143rem;
+}
+
+h5, .h5 {
+    font-size: 1.125rem;
+}
+
+h6, .h6 {
+    font-size: 1rem;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+    margin-top: 0;
+}
+
+p {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Links
+-------------------------------*/
+a {
+    color: $colorPrimary;
+    text-decoration: none;
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+}
+
+/* Emphasis
+-------------------------------*/
+strong {
+    font-weight: $fontWeightSemi;
+}

@@ -1,0 +1,17 @@
+/* MIXINS
+-------------------------------------------------*/
+
+/* Breakpoints
+-------------------------------*/
+@mixin breakpoint($mq) {
+    @if map-has-key($bpoints, $mq) {
+        @media #{inspect(map-get($bpoints, $mq))} {
+            @content;
+        }
+    }
+ 
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+            + "Please make sure it is defined in `$breakpoints` map.";
+    }
+}

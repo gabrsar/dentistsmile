@@ -1,0 +1,24 @@
+/* FORM
+-------------------------------------------------*/
+.form {
+    padding: $spaceDouble $space;
+    background: $colorBg;
+    @include breakpoint(small) {
+        padding: $spaceDouble*2 $space;
+    }
+    input,
+    textarea {
+        @extend %form-fields;
+    }
+    textarea {
+        height: 100px;
+    }
+    .btn {
+        width: auto;
+        border: 0;
+    }
+    .form-field {
+        margin-bottom: 10px;
+    }
+}
+

@@ -1,0 +1,16 @@
+/* LAYOUT
+-------------------------------------------------*/
+.container-fluid {
+    @include breakpoint(medium) {
+        max-width: 1100px;
+    }
+}
+
+.row {
+    &:before, &:after {
+        display: block;
+    }
+}
+
+
+

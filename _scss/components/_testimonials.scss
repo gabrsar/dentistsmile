@@ -1,0 +1,61 @@
+/* TESTIMONIALS
+-------------------------------------------------*/
+.testimonials {
+    color: $white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include breakpoint(large) {
+        background-attachment: fixed;
+    }
+    .overlay-container {
+        @extend %space;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            background: rgba($colorPrimary, 0.5);
+        }
+    }
+    .container-fluid {
+        position: relative;
+        z-index: 10;
+    }
+    blockquote {
+        margin: 0;
+        border: none;
+        font-style: italic;
+        p {
+            margin: 0 0 $space;
+        }
+        small, footer {
+            color: $white;
+            font-style: normal;
+            &:before {
+                content: '';
+            }
+        }
+        footer {
+            font-size: 1.063rem;
+            font-weight: $fontWeightSemi;
+            text-transform: uppercase;
+        }
+        small {
+            text-transform: none;
+        }
+    }
+    .icon {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        border: solid 2px $white;
+        padding: 8px;
+        color: $white;
+    }
+}
